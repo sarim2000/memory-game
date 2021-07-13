@@ -4,11 +4,17 @@
 	align-items: center;
 	color: beige;
 	font-size: 1.4em;
+	width: 200px;
+	height: max-content;
 
 	cursor: pointer;
 	box-shadow: 0 4px 8px 0 red;
 	transition: 0.3s;
 	margin-bottom: 20px;
+}
+
+.card img {
+	width: 200px;
 }
 
 .card:hover {
