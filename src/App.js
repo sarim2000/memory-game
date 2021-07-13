@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header/header.component";
 import Card from "./components/cards/cards.component";
 import { useState, useEffect } from "react";
+import myJSON from "./quotes";
 
 function App() {
 	const [quote, setquote] = useState("");
@@ -30,11 +31,9 @@ function App() {
 	};
 
 	const HeaderQuote = async () => {
-		const data = await fetch(
-			"http://loremricksum.com/api/?paragraphs=1&quotes=1"
-		);
-		const quot = await data.json();
-		const ans = quot.data[0];
+		const data = await myJSON[Math.floor(Math.random() * myJSON.length)];
+
+		const ans = data;
 		setquote(ans);
 	};
 

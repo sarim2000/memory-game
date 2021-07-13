@@ -5,8 +5,8 @@ const Card = ({ name, image, handleclick }) => {
 		// {console.log(name)}
 		<div className="card">
 			<img src={image} alt={name} onClick={() => handleclick(name)} />
-			<div className="name">
-				<h4 className="glow">{name}</h4>
+			<div className="name glow accelerated">
+				<h4>{name}</h4>
 			</div>
 		</div>
 	);
