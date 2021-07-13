@@ -61,6 +61,7 @@ function App() {
 			setclicked((cliked) => [...clicked, name]);
 		} else {
 			setscore(0);
+			setclicked([]);
 		}
 		setdata(shuffleArray(data));
 	};
