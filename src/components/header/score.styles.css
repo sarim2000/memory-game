@@ -1,0 +1,10 @@
+.score {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 1.4em;
+}
+.header {
+	text-align: center;
+	color: beige;
+}
