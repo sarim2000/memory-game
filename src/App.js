@@ -53,11 +53,12 @@ function App() {
 		const f = clicked.includes(name);
 
 		if (!f) {
-			setscore(score + 1);
-			if (score > hscore) {
-				sethscore(score);
+			let x = score + 1;
+			if (x > hscore) {
+				sethscore(x);
 				console.log(hscore);
 			}
+			setscore(x);
 			setclicked((cliked) => [...clicked, name]);
 		} else {
 			setscore(0);
